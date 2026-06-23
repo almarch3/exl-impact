@@ -621,6 +621,37 @@ button {
   margin: 0 auto;
 }
 
+.hoi-pathway {
+  min-height: 200px;
+}
+
+.hoi-pathway-intro {
+  padding: 32px 36px;
+}
+
+.hoi-pathway-intro .hoi-eyebrow {
+  color: var(--asu-gold);
+  font-size: 16px;
+}
+
+.hoi-pathway-intro h2 {
+  position: relative;
+  font-size: 46px;
+  line-height: 1.05;
+}
+
+.hoi-pathway-intro h2::after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 12px;
+  margin-top: 8px;
+  margin-left: 86px;
+  background: var(--asu-gold);
+  border-radius: 999px;
+  transform: rotate(-5deg);
+}
+
 .hoi-card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
