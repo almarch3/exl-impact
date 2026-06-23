@@ -848,4 +848,54 @@ footer {
   align-items: center;
   text-align: center;
 }
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 28px 30px;
+}
+
+.footer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  text-align: left;
+}
+
+.footer-column {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.footer-logo-column {
+  align-items: flex-start;
+}
+
+.footer-exl-logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 8px;
+}
+
+.footer-logo-column p {
+  font-size: 11px;
+  font-weight: 700;
+}
 }
