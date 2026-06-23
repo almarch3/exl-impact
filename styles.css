@@ -274,63 +274,9 @@ button {
   border-radius: 999px;
   text-transform: none;
 }
-
 /* =========================================================
    6. Homepage Sections
    ========================================================= */
-
-.hero-wrap {
-  background: var(--asu-white);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-  padding: 24px 0 36px;
-}
-
-.hero {
-  max-width: var(--page-max);
-  margin: 0 auto;
-  padding: 0 30px;
-  text-align: center;
-}
-
-.hero-image-frame {
-  max-width: 915px;
-  margin: 0 auto;
-}
-
-.hero-image {
-  width: 100%;
-  aspect-ratio: 915 / 269;
-  height: auto;
-  object-fit: cover;
-  object-position: center 30%;
-}
-
-.hero h1,
-.opportunity-section h2,
-.how-it-works h2,
-.hall-of-impact h2,
-.cta-section h2 {
-  font-family: var(--font-ui);
-  font-weight: 700;
-  color: var(--asu-maroon);
-  letter-spacing: -0.03em;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin: 28px 0 20px;
-}
-
-.hero-banner {
-  display: inline-block;
-  max-width: 760px;
-  background: var(--asu-gold);
-  padding: 16px 32px;
-  font-family: var(--font-ui);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.019em;
-}
 
 .opportunity-section {
   position: relative;
@@ -342,28 +288,26 @@ button {
   background-position: center;
 }
 
-.opportunity-inner,
-.hall-inner {
+.opportunity-inner {
   max-width: var(--page-max);
   margin: 0 auto;
 }
 
 .opportunity-section h2,
 .how-it-works h2,
-.hall-of-impact h2,
 .cta-section h2 {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  color: var(--asu-maroon);
+  letter-spacing: -0.03em;
   font-size: 32px;
   margin-bottom: 32px;
 }
 
-.opportunity-grid,
-.story-grid {
+.opportunity-grid {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-}
-
-.opportunity-grid {
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -446,68 +390,6 @@ button {
   font-weight: 700;
   font-size: 18px;
   color: var(--asu-black);
-}
-
-.hall-of-impact {
-  margin-top: 100px;
-  position: relative;
-  background-color: var(--asu-black);
-  color: var(--asu-white);
-  padding: 10px 30px 56px;
-  background-image: url("https://images.unsplash.com/photo-1664179550988-5cc4755ab6e5?auto=format&fit=crop&w=1600&q=60");
-  background-size: cover;
-  background-position: center;
-}
-
-.hall-of-impact h2 {
-  text-align: center;
-  margin-top: -85px;
-  padding: 10px 85px;
-}
-
-.hall-banner {
-  display: block;
-  max-width: 600px;
-  margin: -45px auto 40px;
-  background: var(--asu-gold);
-  color: var(--asu-black);
-  padding: 8px 16px;
-  font-family: var(--font-ui);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.019em;
-  text-align: center;
-}
-
-.story-grid {
-  margin-bottom: 36px;
-}
-
-.story-card {
-  flex: 1;
-  min-width: 200px;
-  background: var(--asu-white);
-  color: var(--asu-black);
-  padding: 32px;
-  text-align: center;
-}
-
-.story-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center 20%;
-  border: 1px solid var(--asu-black);
-  border-radius: 4px;
-  margin-bottom: 18px;
-}
-
-.story-card h3 {
-  font-family: var(--font-ui);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 18px;
 }
 
 .cta-section {
