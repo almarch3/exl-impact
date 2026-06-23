@@ -654,6 +654,14 @@ button {
   overflow: hidden;
 }
 
+.story-quote-box {
+  background: var(--asu-gold);
+  padding: 72px 38px 40px;
+  position: relative;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+}
+
 .quote-mark {
   color: var(--asu-maroon);
   font-size: 56px;
@@ -670,29 +678,15 @@ button {
   margin-bottom: 18px;
 }
 
-.story-quote-box {
-  background: var(--asu-gold);
-
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    92% 100%,
-    0 100%
-  );
-
-  position: relative;
-  z-index: 3;
-}
-
 .story-quote-box strong {
   color: var(--asu-maroon);
 }
 
 /* Student story image alignment */
 
+
 .story-main-image {
-  position: relative;
-  margin-left: -30px;
+  margin-left: -60px;
   z-index: 2;
 }
 
