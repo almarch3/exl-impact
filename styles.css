@@ -549,63 +549,74 @@ button {
   display: none;
 }
 
-.hoi-pathway,
-.hoi-featured {
-  padding: var(--section-pad);
+/* Hall pathway arrow section */
+
+.hoi-pathway {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background: #f3f3f3;
+  min-height: 170px;
 }
 
 .hoi-section-intro {
-  margin-bottom: 32px;
+  background: var(--asu-maroon);
+  color: white;
+  padding: 28px 34px;
+  clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
 }
 
-.hoi-section-intro h2,
-.hoi-cta h2 {
-  font-family: var(--font-display);
-  color: var(--asu-maroon);
-  font-size: clamp(40px, 5vw, 64px);
-  letter-spacing: 0.5px;
-  line-height: 0.95;
+.hoi-section-intro .hoi-eyebrow,
+.hoi-section-intro h2 {
+  color: white;
+}
+
+.hoi-section-intro h2 {
+  font-size: 42px;
+  line-height: 1;
 }
 
 .hoi-pathway-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  align-items: center;
 }
 
 .hoi-pathway-card {
-  padding: 28px;
-  background: var(--light-gray);
-  border-top: 8px solid var(--asu-gold);
-  color: var(--asu-black);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+  border-top: none;
+  border-left: 1px solid #cfcfcf;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: none;
 }
 
 .hoi-pathway-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-soft);
+  transform: none;
+  box-shadow: none;
 }
 
 .hoi-opportunity-icon {
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.hoi-pathway-card img {
-  width: 46px;
-  height: 46px;
-  object-fit: contain;
-  margin-bottom: 18px;
-}
-
-.hoi-pathway-card h3,
-.hoi-card h3 {
-  font-family: var(--font-display);
-  font-size: 28px;
+  height: 32px;
   margin-bottom: 10px;
+}
+
+.hoi-opportunity-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.hoi-pathway-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hoi-pathway-card p {
+  font-family: var(--font-display);
+  font-size: 13px;
+  line-height: 1.15;
+  max-width: 120px;
+  margin: 0 auto;
 }
 
 .hoi-card-grid {
