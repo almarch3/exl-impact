@@ -635,16 +635,24 @@ button {
   line-height: 1.05;
 }
 
+.hoi-pathway-intro h2 {
+    position: relative;
+}
+
 .hoi-pathway-intro h2::after {
-  content: "";
-  display: block;
-  width: 92px;
-  height: 12px;
-  margin-top: 8px;
-  margin-left: 86px;
-  background: var(--asu-gold);
-  border-radius: 999px;
-  transform: rotate(-5deg);
+    content: "";
+    position: absolute;
+
+    width: 90px;
+    height: 22px;
+
+    left: 50px;      /* adjust left/right */
+    bottom: -24px;   /* adjust up/down */
+
+    background-image: url("images/Vector-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .hoi-card-grid {
