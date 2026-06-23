@@ -798,4 +798,54 @@ button {
 .home-icon a:hover svg path {
   stroke: var(--asu-maroon);
 }
+header.main-nav {
+  background: #ffffff;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.asu-header-logo {
+  height: 34px;
+  width: auto;
+}
+
+.header-brand span {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--asu-black);
+  letter-spacing: .4px;
+}
+.see-all-wrap {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.see-all-btn {
+  display: inline-block;
+  background: var(--asu-maroon);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 24px;
+  padding: 12px 28px;
+  border-radius: 999px;
+}
+.footer-exl-logo {
+  height: 70px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-inner {
+  align-items: center;
+  text-align: center;
+}
 }
