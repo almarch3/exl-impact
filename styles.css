@@ -753,22 +753,70 @@ button {
 }
 
 .hoi-cta {
-  padding: 64px 30px;
-  text-align: center;
   background: var(--asu-maroon);
-  color: var(--asu-white);
+  color: white;
+  min-height: 126px;
+  padding: 24px 38px;
+  display: grid;
+  grid-template-columns: 1fr 220px auto;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
 }
 
 .hoi-cta h2 {
-  color: var(--asu-white);
-  margin-bottom: 16px;
+  font-family: var(--font-display);
+  color: var(--asu-gold);
+  font-size: 44px;
+  line-height: .9;
+  margin-bottom: 6px;
+  text-decoration: underline;
 }
 
 .hoi-cta p {
+  font-family: var(--font-display);
   font-size: 18px;
-  margin-bottom: 28px;
+  line-height: 1.05;
+  margin: 0;
 }
 
+.hoi-cta-arrow {
+  position: relative;
+  width: 220px;
+  height: 70px;
+}
+
+.arrow-line {
+  position: absolute;
+  width: 190px;
+  left: 0;
+  top: 24px;
+}
+
+.arrow-head {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  top: 4px;
+}
+
+.hoi-cta-button {
+  background: white;
+  color: black;
+  border-radius: 999px;
+  padding: 14px 34px;
+  min-width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.hoi-cta-button span {
+  font-size: 28px;
+  line-height: 1;
+}
 /* =============================
    8. Footer
    ============================= */
