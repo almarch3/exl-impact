@@ -654,14 +654,6 @@ button {
   overflow: hidden;
 }
 
-.story-quote-box {
-  background: var(--asu-gold);
-  padding: 72px 38px 40px;
-  position: relative;
-  z-index: 2;
-  clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
-}
-
 .quote-mark {
   color: var(--asu-maroon);
   font-size: 56px;
