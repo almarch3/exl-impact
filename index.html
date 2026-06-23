@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExL Impact | Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
+
   <div class="utility-bar">
     <div class="utility-inner">
       <a href="#">ASU Home</a>
       <a href="#">My ASU</a>
       <a href="#">Colleges and schools</a>
       <a href="#">Sign in</a>
-      <span class="utility-search">Search</span>
+      <div class="utility-search">
+        <span>Search</span>
+      </div>
     </div>
   </div>
 
   <header class="main-nav">
     <div class="nav-inner">
-      <a href="index.html" class="logo-container">
-        <img class="logo-image exl-logo" src="images/logo.png" alt="ExL Impact logo">
-      </a>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo-image exl-logo" src="images/logo.png" alt="ExL Impact logo">
+        </a>
+      </div>
 
       <nav class="primary-links">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
+          <li class="no-line"><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="hall-of-impact.html">Hall of Impact</a></li>
           <li><a href="placeholder-get-involved.html">Get Involved</a></li>
@@ -36,125 +45,162 @@
     </div>
   </header>
 
-  <main>
-    <section class="home-hero">
-      <div class="home-hero-image">
-        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=80" alt="Students collaborating">
+  <div class="hero-wrap">
+    <section class="hero">
+      <div class="hero-image-frame">
+        <img class="hero-image"
+          src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=80"
+          alt="A group of students collaborating">
       </div>
-      <h1>Find your next experience</h1>
-      <p class="gold-banner">
-        Discover internships, research opportunities, faculty collaborations and real-world projects that help you build career-ready skills.
-      </p>
-    </section>
 
-    <section class="opportunity-section">
-      <h2>Find an opportunity</h2>
+      <h1>FIND YOUR NEXT EXPERIENCE</h1>
+
+      <div class="hero-banner">
+        Discover internships, research opportunities, faculty collaborations, and real-world
+        projects that help you build career-ready skills.
+      </div>
+    </section>
+  </div>
+
+  <section class="opportunity-section">
+    <div class="opportunity-inner">
+      <h2>FIND AN OPPORTUNITY</h2>
 
       <div class="opportunity-grid">
-        <article class="opportunity-card">
-          <div class="opportunity-icon">💼</div>
-          <h3>Internship</h3>
-          <p>Gain hands-on industry experience.</p>
-        </article>
+        <div class="opportunity-card">
+          <div class="opportunity-icon">▣</div>
+          <h3>INTERNSHIP</h3>
+          <p>Gain hands-on industry experience</p>
+        </div>
 
-        <article class="opportunity-card">
-          <div class="opportunity-icon">🔎</div>
-          <h3>Research</h3>
-          <p>Work with faculty on projects.</p>
-        </article>
+        <div class="opportunity-card">
+          <div class="opportunity-icon">⌕</div>
+          <h3>RESEARCH</h3>
+          <p>Work with faculty on projects</p>
+        </div>
 
-        <article class="opportunity-card">
-          <div class="opportunity-icon">👥</div>
-          <h3>Faculty</h3>
-          <p>Connect with mentors.</p>
-        </article>
+        <div class="opportunity-card">
+          <div class="opportunity-icon">◉</div>
+          <h3>FACULTY</h3>
+          <p>Connect with mentors</p>
+        </div>
 
-        <article class="opportunity-card">
-          <div class="opportunity-icon">🌐</div>
-          <h3>Community</h3>
-          <p>Partner with local organizations.</p>
-        </article>
+        <div class="opportunity-card">
+          <div class="opportunity-icon">◎</div>
+          <h3>COMMUNITY</h3>
+          <p>Partner with local organizations</p>
+        </div>
       </div>
 
-      <a href="placeholder-opportunities.html" class="btn btn-maroon">View all opportunities</a>
-    </section>
-
-    <section class="how-it-works">
-      <h2>How ExL works</h2>
-
-      <div class="steps">
-        <article>
-          <span>1</span>
-          <h3>Explore</h3>
-          <p>Find an opportunity.</p>
-        </article>
-
-        <article>
-          <span>2</span>
-          <h3>Connect</h3>
-          <p>Meet faculty or partners.</p>
-        </article>
-
-        <article>
-          <span>3</span>
-          <h3>Experience</h3>
-          <p>Work on real projects.</p>
-        </article>
-
-        <article>
-          <span>4</span>
-          <h3>Impact</h3>
-          <p>Reflect, share and grow.</p>
-        </article>
+      <div class="center">
+        <a href="placeholder-opportunities.html" class="btn">VIEW ALL OPPORTUNITIES</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="home-impact">
-      <h2>Hall of Impact</h2>
-      <p class="gold-banner">
-        See how students turned opportunities into meaningful experiences and real-world impact.
-      </p>
+  <section class="how-it-works">
+    <h2>HOW EXL WORKS</h2>
 
-      <div class="home-story-grid">
-        <article>
-          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Student story">
-          <h3>Student story</h3>
-          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
-        </article>
-
-        <article>
-          <img src="https://images.unsplash.com/photo-1664382953647-5c6c76dd63b9?auto=format&fit=crop&w=600&q=80" alt="Faculty highlight">
-          <h3>Faculty highlight</h3>
-          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
-        </article>
-
-        <article>
-          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&q=80" alt="Community partnership">
-          <h3>Community partnership</h3>
-          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
-        </article>
+    <div class="steps">
+      <div class="step">
+        <div class="step-dot">1</div>
+        <h3>EXPLORE</h3>
+        <p>Find an opportunity</p>
       </div>
-    </section>
 
-    <section class="cta-section">
-      <h2>Ready to get started?</h2>
-      <p>Find opportunities that align with your interests, skills and career goals.</p>
-      <a href="placeholder-get-involved.html" class="btn btn-light">Explore opportunities</a>
-    </section>
-  </main>
+      <div class="step">
+        <div class="step-dot">2</div>
+        <h3>CONNECT</h3>
+        <p>Meet faculty or partners</p>
+      </div>
 
-  <footer class="site-footer">
+      <div class="step">
+        <div class="step-dot">3</div>
+        <h3>EXPERIENCE</h3>
+        <p>Work on real projects</p>
+      </div>
+
+      <div class="step">
+        <div class="step-dot">4</div>
+        <h3>IMPACT</h3>
+        <p>Reflect, share, grow</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hall-of-impact">
+    <div class="hall-inner">
+      <h2>HALL OF IMPACT</h2>
+
+      <div class="hall-banner">
+        See how students turned opportunities into meaningful
+        experiences and real-world impact.
+      </div>
+
+      <div class="story-grid">
+        <div class="story-card">
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80"
+            alt="Student story">
+          <h3>STUDENT STORY</h3>
+          <a href="hall-of-impact.html" class="btn">VIEW STORY</a>
+        </div>
+
+        <div class="story-card">
+          <img src="https://images.unsplash.com/photo-1664382953647-5c6c76dd63b9?auto=format&fit=crop&w=600&q=80"
+            alt="Faculty highlight">
+          <h3>FACULTY HIGHLIGHT</h3>
+          <a href="hall-of-impact.html" class="btn">VIEW STORY</a>
+        </div>
+
+        <div class="story-card">
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&q=80"
+            alt="Community partnership">
+          <h3>COMMUNITY PARTNERSHIP</h3>
+          <a href="hall-of-impact.html" class="btn">VIEW STORY</a>
+        </div>
+
+        <div class="story-card">
+          <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=600&q=80"
+            alt="Innovation project">
+          <h3>INNOVATION PROJECTS</h3>
+          <a href="hall-of-impact.html" class="btn">VIEW STORY</a>
+        </div>
+      </div>
+
+      <div class="center">
+        <a href="hall-of-impact.html" class="btn">EXPLORE ALL STORIES</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>READY TO GET STARTED?</h2>
+    <p>Find opportunities that align with your interests, skills, and career goals.</p>
+    <a href="placeholder-get-involved.html" class="btn">EXPLORE OPPORTUNITIES</a>
+  </section>
+
+  <footer>
     <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="ExL Impact logo">
-        <p>Experiential Learning @ TPS</p>
+      <div class="footer-column">
+        <div class="logo-container">
+          <img class="logo-image exl-logo" src="images/logo.png" alt="ExL Impact logo">
+        </div>
+        <p>EXPERIENTIAL LEARNING @ TPS</p>
       </div>
 
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="hall-of-impact.html">Hall of Impact</a>
-      <a href="placeholder-get-involved.html">Get Involved</a>
+      <div class="footer-column">
+        <a href="#">About</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="hall-of-impact.html">Hall of Impact</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="placeholder-get-involved.html">Get Involved</a>
+      </div>
     </div>
   </footer>
+
 </body>
-</html>S
+</html>
