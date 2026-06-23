@@ -169,7 +169,7 @@ button {
   font-weight: 700;
   color: var(--asu-black);
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .logo-image {
@@ -248,7 +248,7 @@ button {
   font-size: 16px;
   padding: 14px 28px;
   border-radius: 6px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hoi-btn-gold {
@@ -272,7 +272,7 @@ button {
   font-size: 16px;
   padding: 12px 28px;
   border-radius: 999px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* =========================================================
@@ -561,7 +561,6 @@ button {
   line-height: 0.88;
   letter-spacing: -0.06em;
   margin-bottom: 24px;
-  text-transform: uppercase;
 }
 
 .hoi-hero h1 span {
@@ -682,7 +681,7 @@ button {
   font-size: 13px;
   font-weight: 700;
   line-height: 1.25;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* 7C. Featured Opportunities */
@@ -752,7 +751,7 @@ button {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 10px;
 }
 
@@ -806,7 +805,7 @@ button {
   line-height: 0.98;
   letter-spacing: -0.055em;
   margin-bottom: 18px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hoi-story-overlay p {
@@ -829,7 +828,7 @@ button {
   line-height: 0.98;
   letter-spacing: -0.055em;
   margin-bottom: 14px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hoi-story-dark p {
@@ -870,7 +869,7 @@ button {
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hoi-cta-arrow {
@@ -908,7 +907,7 @@ button {
   font-family: var(--font-ui);
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hoi-cta-button span {
@@ -952,7 +951,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .footer-column a {
