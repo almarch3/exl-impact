@@ -1,143 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hall of Impact | ExL Impact</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="images/favicon.ico"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExL Impact | Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
-  <header class="site-header">
-    <a href="index.html" class="brand">
-        <img src="images/logo.png" alt="ExL Impact logo" class="site-logo">
-    </a>
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <a href="#">ASU Home</a>
+      <a href="#">My ASU</a>
+      <a href="#">Colleges and schools</a>
+      <a href="#">Sign in</a>
+      <span class="utility-search">Search</span>
+    </div>
+  </div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="hall-of-impact.html" class="active">Hall of Impact</a>
-      <a href="#get-involved">Get involved</a>
-    </nav>
+  <header class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-container">
+        <img class="logo-image exl-logo" src="images/logo.png" alt="ExL Impact logo">
+      </a>
+
+      <nav class="primary-links">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="hall-of-impact.html">Hall of Impact</a></li>
+          <li><a href="placeholder-get-involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Experiential learning at ASU</p>
-        <h1>Real learning. Real impact. <span>Your future.</span></h1>
-        <p>
-          Explore hands-on opportunities that connect classroom learning,
-          community partnerships and career-ready experience.
-        </p>
-
-        <div class="button-row">
-          <a href="#featured" class="btn btn-gold">Explore opportunities</a>
-          <a href="#stories" class="btn btn-light">Impact stories</a>
-        </div>
+    <section class="home-hero">
+      <div class="home-hero-image">
+        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=80" alt="Students collaborating">
       </div>
+      <h1>Find your next experience</h1>
+      <p class="gold-banner">
+        Discover internships, research opportunities, faculty collaborations and real-world projects that help you build career-ready skills.
+      </p>
     </section>
 
-    <section class="pathway">
-      <div class="section-intro">
-        <p class="eyebrow maroon-text">Find your pathway</p>
-        <h2>What do you want to do?</h2>
+    <section class="opportunity-section">
+      <h2>Find an opportunity</h2>
+
+      <div class="opportunity-grid">
+        <article class="opportunity-card">
+          <div class="opportunity-icon">💼</div>
+          <h3>Internship</h3>
+          <p>Gain hands-on industry experience.</p>
+        </article>
+
+        <article class="opportunity-card">
+          <div class="opportunity-icon">🔎</div>
+          <h3>Research</h3>
+          <p>Work with faculty on projects.</p>
+        </article>
+
+        <article class="opportunity-card">
+          <div class="opportunity-icon">👥</div>
+          <h3>Faculty</h3>
+          <p>Connect with mentors.</p>
+        </article>
+
+        <article class="opportunity-card">
+          <div class="opportunity-icon">🌐</div>
+          <h3>Community</h3>
+          <p>Partner with local organizations.</p>
+        </article>
       </div>
 
-        <div class="pathway-grid">
-        <a href="placeholder-project.html" class="pathway-card">
-            <img src="images/icon-project.png" alt="">
-            <h3>Find a project</h3>
-            <p>Discover real-world projects connected to your interests and goals.</p>
-        </a>
-
-        <a href="placeholder-explore.html" class="pathway-card">
-            <img src="images/icon-explore.png" alt="">
-            <h3>Explore ExL</h3>
-            <p>Learn how experiential learning supports your academic path.</p>
-        </a>
-
-        <a href="placeholder-portfolio.html" class="pathway-card">
-            <img src="images/icon-portfolio.png" alt="">
-            <h3>Build your portfolio</h3>
-            <p>Turn hands-on work into meaningful examples of your skills.</p>
-        </a>
-
-        <a href="placeholder-involved.html" class="pathway-card">
-            <img src="images/icon-involved.png" alt="">
-            <h3>Get involved</h3>
-            <p>Connect with events, campus experiences and future opportunities.</p>
-        </a>
-        </div>
+      <a href="placeholder-opportunities.html" class="btn btn-maroon">View all opportunities</a>
     </section>
 
-    <section id="featured" class="featured">
-      <div class="section-intro">
-        <p class="eyebrow maroon-text">Featured opportunities</p>
-        <h2>Explore ways to make an impact</h2>
-      </div>
+    <section class="how-it-works">
+      <h2>How ExL works</h2>
 
-      <div class="card-grid">
-        <article class="card">
-          <img src="images/career-development.png" alt="Students collaborating during a career development activity">
-          <div class="card-content">
-            <a href="placeholder-career.html" class="tag">Career Development</a>
-            <h3>Project-based experience</h3>
-            <p>Work with teams and partners to solve real challenges.</p>
-          </div>
+      <div class="steps">
+        <article>
+          <span>1</span>
+          <h3>Explore</h3>
+          <p>Find an opportunity.</p>
         </article>
 
-        <article class="card">
-          <img src="images/microscope.png" alt="Student working with a microscope">
-          <div class="card-content">
-            <a href="placeholder-research.html" class="tag">Research</a>
-            <h3>Applied discovery</h3>
-            <p>Connect research, design and testing through hands-on work.</p>
-          </div>
+        <article>
+          <span>2</span>
+          <h3>Connect</h3>
+          <p>Meet faculty or partners.</p>
         </article>
 
-        <article class="card">
-          <img src="images/graduation.png" alt="ASU graduates celebrating with maroon and gold balloons">
-          <div class="card-content">
-            <a href="placeholder-community.html" class="tag">Community</a>
-            <h3>Event marketing</h3>
-            <p>Support outreach experiences that connect students and partners.</p>
-          </div>
+        <article>
+          <span>3</span>
+          <h3>Experience</h3>
+          <p>Work on real projects.</p>
+        </article>
+
+        <article>
+          <span>4</span>
+          <h3>Impact</h3>
+          <p>Reflect, share and grow.</p>
         </article>
       </div>
     </section>
 
-    <section id="stories" class="stories-banner">
-  <article class="story-half story-quote">
-    <p class="eyebrow">Student story</p>
-    <blockquote>
-      “ExL helped me turn classroom learning into real-world impact and opened doors I never expected.”
-    </blockquote>
-  </article>
+    <section class="home-impact">
+      <h2>Hall of Impact</h2>
+      <p class="gold-banner">
+        See how students turned opportunities into meaningful experiences and real-world impact.
+      </p>
 
-  <article class="story-half story-success">
-    <img src="images/student-story.png" alt="Student writing in a notebook">
-    <div class="success-content">
-      <p class="eyebrow">Success story</p>
-      <h2>From classroom ideas to real experience</h2>
-      <a href="placeholder-success-story.html" class="btn btn-gold">Read story</a>
-    </div>
-  </article>
-</section>
+      <div class="home-story-grid">
+        <article>
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Student story">
+          <h3>Student story</h3>
+          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
+        </article>
 
-    <section id="get-involved" class="cta">
-      <div>
-        <p class="eyebrow">Ready to get started?</p>
-        <h2>Join the ExL community and find your next opportunity.</h2>
+        <article>
+          <img src="https://images.unsplash.com/photo-1664382953647-5c6c76dd63b9?auto=format&fit=crop&w=600&q=80" alt="Faculty highlight">
+          <h3>Faculty highlight</h3>
+          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
+        </article>
+
+        <article>
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&q=80" alt="Community partnership">
+          <h3>Community partnership</h3>
+          <a href="hall-of-impact.html" class="btn btn-gold">View story</a>
+        </article>
       </div>
+    </section>
 
-     <a href="placeholder-get-involved.html" class="btn btn-light">Get involved</a>
+    <section class="cta-section">
+      <h2>Ready to get started?</h2>
+      <p>Find opportunities that align with your interests, skills and career goals.</p>
+      <a href="placeholder-get-involved.html" class="btn btn-light">Explore opportunities</a>
     </section>
   </main>
 
-  <footer>
-    <p><strong>ExL Impact</strong></p>
-    <p>Explore. Experience. Impact.</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="ExL Impact logo">
+        <p>Experiential Learning @ TPS</p>
+      </div>
+
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="hall-of-impact.html">Hall of Impact</a>
+      <a href="placeholder-get-involved.html">Get Involved</a>
+    </div>
   </footer>
 </body>
 </html>
