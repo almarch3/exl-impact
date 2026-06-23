@@ -712,6 +712,22 @@ footer {
   margin-bottom: 28px;
 }
 
+button {
+  font-family: var(--font-display);
+  cursor: pointer;
+  border: none;
+}
+
+.utility-search svg {
+  width: 13px;
+  height: 13px;
+}
+
+.home-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
 /* Responsive */
 
 @media (max-width: 900px) {
