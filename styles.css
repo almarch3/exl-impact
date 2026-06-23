@@ -618,13 +618,15 @@ button {
   text-transform: none;
 }
 
+/* Paint streak under "do?" */
+
 .hoi-pathway-intro h2::after {
   content: "";
   position: absolute;
-  left: 70px;
-  bottom: -28px;
-  width: 110px;
-  height: 28px;
+  left: 76px;
+  bottom: -18px;
+  width: 95px;
+  height: 24px;
   background: url("images/Vector-1.png") center / contain no-repeat;
   z-index: 2;
   display: block;
@@ -804,15 +806,19 @@ button {
   color: var(--asu-maroon);
 }
 
+/* Student story image alignment */
+
 .story-main-image {
-  margin-left: -75px;
+  margin-left: -54px;
   z-index: 1;
+  height: 100%;
 }
 
 .story-main-image img {
-  width: 100%;
+  width: calc(100% + 54px);
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .story-cards-area {
