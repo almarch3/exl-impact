@@ -559,21 +559,23 @@ button {
   min-height: 170px;
 }
 
-.hoi-section-intro {
-  background: var(--asu-maroon);
-  color: white;
-  padding: 28px 34px;
-  clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
+/* Pathway arrow block */
+
+.hoi-pathway-intro {
+    background: var(--asu-maroon);
+    color: white;
+    padding: 28px 34px;
+    clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
 }
 
-.hoi-section-intro .hoi-eyebrow,
-.hoi-section-intro h2 {
-  color: white;
+.hoi-pathway-intro .hoi-eyebrow,
+.hoi-pathway-intro h2 {
+    color: white;
 }
 
-.hoi-section-intro h2 {
-  font-size: 42px;
-  line-height: 1;
+.hoi-pathway-intro h2 {
+    font-size: 42px;
+    line-height: 1;
 }
 
 .hoi-pathway-grid {
