@@ -427,27 +427,28 @@ footer {
 }
 
 .footer-inner {
-  display: flex;
-  align-items: center;
   max-width: 1300px;
-  gap: 64px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  align-items: center;
+  text-align: center;
+
+  gap: 30px;
+
   font-family: var(--font-ui);
   font-weight: 700;
   font-size: 18px;
   letter-spacing: -0.019em;
 }
 
-.footer-inner a {
-  color: var(--asu-white);
-}
-
-.footer-inner a:hover {
-  color: var(--asu-gold);
-  text-decoration: underline;
-}
-
-.footer-column p {
-  color: var(--asu-white);
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hall of Impact Page */
@@ -767,10 +768,9 @@ button {
     font-size: 28px;
   }
 
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+ .footer-inner {
+  grid-template-columns: 1fr;
+}
 
   .hoi-stats,
   .hoi-pathway-grid,
