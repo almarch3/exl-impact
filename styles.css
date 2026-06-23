@@ -1,41 +1,65 @@
 /* =========================================================
    ExL Impact Website Styles
-   Organized: Variables → Base → Header → Homepage → Hall → Footer → Responsive
+   Sections:
+   1. Variables
+   2. Reset / Base
+   3. Utility Bar
+   4. Header / Navigation
+   5. Shared Buttons
+   6. Homepage Sections
+   7. Hall of Impact Page
+      7A. Hero
+      7B. Pathway Arrow Section
+      7C. Featured Opportunities
+      7D. Student Stories
+      7E. CTA Banner
+   8. Footer
+   9. Responsive
    ========================================================= */
 
-/* =============================
+/* =========================================================
    1. Variables
-   ============================= */
+   ========================================================= */
+
 :root {
   --asu-maroon: #8C1D40;
   --asu-gold: #FFC627;
   --asu-black: #000000;
   --asu-white: #FFFFFF;
+
   --light-gray: #F1F1F1;
+  --section-gray: #F3F3F3;
   --utility-gray: #E5E5E5;
+  --line-gray: #CFCFCF;
+
   --icon-color: #1E1E1E;
 
-  --font-display: 'Bebas Neue', Arial, Helvetica, sans-serif;
-  --font-ui: 'Inter', Arial, Helvetica, sans-serif;
+  /* ASU-aligned web typography */
+  --font-display: Arial, Helvetica, sans-serif;
+  --font-ui: Arial, Helvetica, sans-serif;
 
   --page-max: 1300px;
-  --section-pad: 72px 6%;
   --shadow-soft: 0 8px 22px rgba(0, 0, 0, 0.16);
 }
 
-/* =============================
+/* =========================================================
    2. Reset / Base
-   ============================= */
+   ========================================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-ui);
   color: var(--asu-black);
-  background-color: var(--asu-white);
+  background: var(--asu-white);
   line-height: 1.5;
 }
 
@@ -54,20 +78,21 @@ img {
 }
 
 button {
-  font-family: var(--font-display);
-  cursor: pointer;
   border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
 }
 
 .center {
   text-align: center;
 }
 
-/* =============================
+/* =========================================================
    3. Utility Bar
-   ============================= */
+   ========================================================= */
+
 .utility-bar {
-  background-color: var(--utility-gray);
+  background: var(--utility-gray);
   font-family: var(--font-ui);
   font-size: 12px;
 }
@@ -106,17 +131,18 @@ button {
   font-size: 11px;
 }
 
-/* =============================
+/* =========================================================
    4. Header / Navigation
-   ============================= */
+   ========================================================= */
+
 .main-nav {
-  background-color: var(--asu-white);
+  background: var(--asu-white);
 }
 
 .nav-inner {
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 20px 20px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -133,15 +159,17 @@ button {
 }
 
 .asu-header-logo {
-  height: 34px;
+  height: 42px;
   width: auto;
 }
 
 .header-brand span {
-  font-family: var(--font-display);
-  font-size: 28px;
+  font-family: var(--font-ui);
+  font-size: 26px;
+  font-weight: 700;
   color: var(--asu-black);
-  letter-spacing: 0.4px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .logo-image {
@@ -160,6 +188,7 @@ button {
 
 .primary-links ul {
   display: flex;
+  align-items: center;
   gap: 40px;
   font-family: var(--font-ui);
   font-weight: 700;
@@ -190,33 +219,36 @@ button {
   stroke: var(--asu-maroon);
 }
 
-/* =============================
+/* =========================================================
    5. Shared Buttons
-   ============================= */
+   ========================================================= */
+
 .btn,
 .hoi-btn,
-.see-all-btn {
+.see-all-btn,
+.hoi-cta-button {
   display: inline-block;
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
+  font-weight: 700;
 }
 
 .btn {
-  background-color: var(--asu-maroon);
+  background: var(--asu-maroon);
   color: var(--asu-white);
-  font-size: 22px;
-  letter-spacing: -0.019em;
+  font-size: 18px;
   padding: 14px 32px;
   border-radius: 6px;
 }
 
 .btn:hover {
-  background-color: #6e1631;
+  background: #6E1631;
 }
 
 .hoi-btn {
-  font-size: 22px;
+  font-size: 16px;
   padding: 14px 28px;
   border-radius: 6px;
+  text-transform: uppercase;
 }
 
 .hoi-btn-gold {
@@ -237,16 +269,18 @@ button {
 .see-all-btn {
   background: var(--asu-maroon);
   color: var(--asu-white);
-  font-size: 24px;
+  font-size: 16px;
   padding: 12px 28px;
   border-radius: 999px;
+  text-transform: uppercase;
 }
 
-/* =============================
-   6. Homepage
-   ============================= */
+/* =========================================================
+   6. Homepage Sections
+   ========================================================= */
+
 .hero-wrap {
-  background-color: var(--asu-white);
+  background: var(--asu-white);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   padding: 24px 0 36px;
 }
@@ -276,9 +310,10 @@ button {
 .how-it-works h2,
 .hall-of-impact h2,
 .cta-section h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
+  font-weight: 700;
   color: var(--asu-maroon);
-  letter-spacing: 0.5px;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 {
@@ -289,7 +324,7 @@ button {
 .hero-banner {
   display: inline-block;
   max-width: 760px;
-  background-color: var(--asu-gold);
+  background: var(--asu-gold);
   padding: 16px 32px;
   font-family: var(--font-ui);
   font-weight: 700;
@@ -302,7 +337,7 @@ button {
   padding: 56px 30px;
   background-image:
     linear-gradient(rgba(245, 245, 245, 0.88), rgba(245, 245, 245, 0.88)),
-    url('https://images.unsplash.com/photo-1608303588026-884930af2559?auto=format&fit=crop&w=1600&q=60');
+    url("https://images.unsplash.com/photo-1608303588026-884930af2559?auto=format&fit=crop&w=1600&q=60");
   background-size: cover;
   background-position: center;
 }
@@ -351,16 +386,17 @@ button {
 
 .opportunity-card h3,
 .step h3 {
-  font-family: var(--font-display);
-  font-size: 26px;
-  letter-spacing: 0.3px;
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
 .opportunity-card p,
 .step p {
-  font-family: var(--font-display);
-  font-size: 16px;
+  font-family: var(--font-ui);
+  font-size: 15px;
   color: #222;
 }
 
@@ -386,7 +422,7 @@ button {
   left: 17px;
   right: 17px;
   height: 3px;
-  background-color: var(--asu-black);
+  background: var(--asu-black);
   z-index: 0;
 }
 
@@ -401,12 +437,13 @@ button {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: var(--asu-gold);
+  background: var(--asu-gold);
   margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
+  font-weight: 700;
   font-size: 18px;
   color: var(--asu-black);
 }
@@ -417,7 +454,7 @@ button {
   background-color: var(--asu-black);
   color: var(--asu-white);
   padding: 10px 30px 56px;
-  background-image: url('https://images.unsplash.com/photo-1664179550988-5cc4755ab6e5?auto=format&fit=crop&w=1600&q=60');
+  background-image: url("https://images.unsplash.com/photo-1664179550988-5cc4755ab6e5?auto=format&fit=crop&w=1600&q=60");
   background-size: cover;
   background-position: center;
 }
@@ -432,7 +469,7 @@ button {
   display: block;
   max-width: 600px;
   margin: -45px auto 40px;
-  background-color: var(--asu-gold);
+  background: var(--asu-gold);
   color: var(--asu-black);
   padding: 8px 16px;
   font-family: var(--font-ui);
@@ -449,7 +486,7 @@ button {
 .story-card {
   flex: 1;
   min-width: 200px;
-  background-color: var(--asu-white);
+  background: var(--asu-white);
   color: var(--asu-black);
   padding: 32px;
   text-align: center;
@@ -466,17 +503,11 @@ button {
 }
 
 .story-card h3 {
-  font-family: var(--font-display);
-  font-size: 24px;
-  letter-spacing: 0.3px;
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 18px;
-}
-
-.story-card .btn {
-  width: 100%;
-  padding: 12px 0;
-  font-size: 18px;
-  border-radius: 3px;
 }
 
 .cta-section {
@@ -487,14 +518,17 @@ button {
 }
 
 .cta-section p {
-  font-family: var(--font-display);
-  font-size: 22px;
+  font-family: var(--font-ui);
+  font-size: 20px;
   margin-bottom: 28px;
 }
 
-/* =============================
+/* =========================================================
    7. Hall of Impact Page
-   ============================= */
+   ========================================================= */
+
+/* 7A. Hall Hero */
+
 .hoi-hero {
   min-height: 620px;
   padding: 80px 6%;
@@ -521,11 +555,13 @@ button {
 }
 
 .hoi-hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(56px, 8vw, 100px);
-  line-height: 0.9;
-  letter-spacing: 0.5px;
+  font-family: var(--font-ui);
+  font-size: clamp(64px, 8vw, 116px);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.06em;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .hoi-hero h1 span {
@@ -544,99 +580,43 @@ button {
   margin-top: 32px;
 }
 
-/* Metrics are removed from the page. Keep this hidden in case old HTML remains. */
 .hoi-stats {
   display: none;
 }
 
-/* Hall pathway arrow section */
-
-.hoi-pathway {
-  padding: 0;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  background: #f3f3f3;
-  min-height: 170px;
-}
-
-/* Pathway arrow block */
-
-.hoi-pathway-intro {
-    background: var(--asu-maroon);
-    color: white;
-    padding: 28px 34px;
-    clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
-}
-
-.hoi-pathway-intro h2 {
-    font-size: 42px;
-    line-height: 1;
-}
-
-.hoi-pathway-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-}
-
-.hoi-pathway-card {
-  background: transparent;
-  border-top: none;
-  border-left: 1px solid #cfcfcf;
-  padding: 28px 24px;
-  text-align: center;
-  box-shadow: none;
-}
-
-.hoi-pathway-card:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-.hoi-opportunity-icon {
-  height: 32px;
-  margin-bottom: 10px;
-}
-
-.hoi-opportunity-icon svg {
-  width: 34px;
-  height: 34px;
-}
-
-.hoi-pathway-card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.hoi-pathway-card p {
-  font-family: var(--font-display);
-  font-size: 13px;
-  line-height: 1.15;
-  max-width: 120px;
-  margin: 0 auto;
-}
+/* 7B. Pathway Arrow Section */
 
 .hoi-pathway {
   min-height: 220px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  background: var(--section-gray);
 }
 
 .hoi-pathway-intro {
+  background: var(--asu-maroon);
+  color: var(--asu-white);
   padding: 32px 36px;
+  clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
 }
 
 .hoi-pathway-intro .hoi-eyebrow {
   color: var(--asu-gold);
   font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .hoi-pathway-intro h2 {
   position: relative;
+  color: var(--asu-white);
+  font-family: var(--font-ui);
   font-size: 46px;
+  font-weight: 700;
   line-height: 1.05;
-}
-
-.hoi-pathway-intro h2 {
-  position: relative;
+  letter-spacing: -0.04em;
+  text-transform: none;
 }
 
 .hoi-pathway-intro h2::after {
@@ -649,6 +629,87 @@ button {
   background: url("images/Vector-1.png") center / contain no-repeat;
   z-index: 2;
   display: block;
+}
+
+.hoi-pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.hoi-pathway-card {
+  height: 100%;
+  background: transparent;
+  border-left: 1px solid var(--line-gray);
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hoi-pathway-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.hoi-opportunity-icon {
+  height: 34px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoi-opportunity-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.hoi-pathway-card h3 {
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+}
+
+.hoi-pathway-card p {
+  max-width: 150px;
+  margin: 0 auto;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+/* 7C. Featured Opportunities */
+
+.hoi-featured {
+  padding: 72px 6%;
+}
+
+.hoi-section-intro {
+  margin-bottom: 32px;
+}
+
+.hoi-section-intro .hoi-eyebrow {
+  color: var(--asu-maroon);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hoi-section-intro h2 {
+  font-family: var(--font-ui);
+  color: var(--asu-maroon);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  text-transform: none;
 }
 
 .hoi-card-grid {
@@ -680,13 +741,27 @@ button {
   color: var(--asu-black);
   padding: 7px 16px;
   border-radius: 999px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
-.hoi-tag:hover {
-  text-decoration: underline;
+.hoi-card h3 {
+  font-family: var(--font-ui);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
+.hoi-card p {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+/* 7D. Student Stories */
 
 .hoi-stories {
   display: grid;
@@ -725,10 +800,17 @@ button {
 }
 
 .hoi-story-overlay blockquote {
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
   font-size: clamp(36px, 4vw, 56px);
-  line-height: 0.95;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
   margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.hoi-story-overlay p {
+  font-size: 15px;
 }
 
 .hoi-date {
@@ -741,10 +823,13 @@ button {
 }
 
 .hoi-story-dark h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
   font-size: clamp(38px, 5vw, 60px);
-  line-height: 0.95;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
   margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
 .hoi-story-dark p {
@@ -752,78 +837,93 @@ button {
   margin-bottom: 22px;
 }
 
+/* 7E. CTA Banner */
+
 .hoi-cta {
+  min-height: 175px;
+  padding: 34px 44px;
   background: var(--asu-maroon);
-  color: white;
-  min-height: 126px;
-  padding: 24px 38px;
+  color: var(--asu-white);
   display: grid;
-  grid-template-columns: 1fr 220px auto;
+  grid-template-columns: minmax(280px, 420px) 190px 1fr;
   align-items: center;
-  gap: 40px;
+  gap: 18px;
   text-align: left;
 }
 
+.hoi-cta-text h2,
 .hoi-cta h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-ui);
   color: var(--asu-gold);
-  font-size: 44px;
-  line-height: .9;
-  margin-bottom: 6px;
-  text-decoration: underline;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  margin-bottom: 8px;
+  text-decoration: none;
+  text-transform: none;
 }
 
+.hoi-cta-text p,
 .hoi-cta p {
-  font-family: var(--font-display);
-  font-size: 18px;
-  line-height: 1.05;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .hoi-cta-arrow {
   position: relative;
-  width: 220px;
-  height: 70px;
+  width: 190px;
+  height: 78px;
+  justify-self: start;
+  margin-left: -8px;
 }
 
 .arrow-line {
   position: absolute;
-  width: 190px;
+  width: 140px;
   left: 0;
-  top: 24px;
+  top: 32px;
 }
 
 .arrow-head {
   position: absolute;
-  width: 70px;
-  right: 0;
-  top: 4px;
+  width: 62px;
+  right: 4px;
+  top: 13px;
 }
 
 .hoi-cta-button {
-  background: white;
-  color: black;
+  justify-self: end;
+  min-width: 220px;
+  padding: 14px 30px;
+  background: var(--asu-white);
+  color: var(--asu-black);
   border-radius: 999px;
-  padding: 14px 34px;
-  min-width: 210px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-display);
-  font-size: 20px;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hoi-cta-button span {
   font-size: 28px;
   line-height: 1;
 }
-/* =============================
+
+/* =========================================================
    8. Footer
-   ============================= */
+   ========================================================= */
+
 footer {
   background: var(--asu-black);
   color: var(--asu-white);
-  padding: 28px 30px;
+  padding: 36px 30px;
 }
 
 .footer-inner {
@@ -847,10 +947,12 @@ footer {
 }
 
 .footer-column h4 {
-  font-family: var(--font-display);
-  font-size: 24px;
-  margin-bottom: 8px;
   color: var(--asu-white);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .footer-column a {
@@ -865,55 +967,31 @@ footer {
 }
 
 .footer-exl-logo {
-  height: 48px;
+  height: 72px;
   width: auto;
   margin-bottom: 8px;
 }
 
 .footer-logo-column p {
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* Header height fix */
-
-.nav-inner {
-  padding: 18px 20px;
-}
-
-.asu-header-logo {
-  height: 42px;
-}
-
-.header-brand span {
-  font-size: 30px;
-}
-
-
-/* Footer logo size fix */
-
-.footer-exl-logo {
-  height: 72px;
-}
-
-.footer-logo-column p {
   font-size: 12px;
+  font-weight: 700;
   margin-top: 4px;
 }
 
 .footer-social {
-    display: flex;
-    gap: 10px;
-    margin-top: 12px;
-    font-size: 12px;
-    color: white;
-    opacity: .85;
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--asu-white);
+  opacity: 0.85;
 }
 
-/* =============================
+/* =========================================================
    9. Responsive
-   ============================= */
-@media (max-width: 900px) {
+   ========================================================= */
+
+@media (max-width: 1000px) {
   .nav-inner {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -926,6 +1004,29 @@ footer {
     justify-content: center;
   }
 
+  .hoi-pathway {
+    grid-template-columns: 1fr;
+  }
+
+  .hoi-pathway-intro {
+    clip-path: none;
+  }
+
+  .hoi-pathway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hoi-cta {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .hoi-cta-button {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 900px) {
   .utility-inner {
     justify-content: center;
     flex-wrap: wrap;
@@ -950,7 +1051,6 @@ footer {
     font-size: 28px;
   }
 
-  .hoi-pathway-grid,
   .hoi-card-grid,
   .hoi-stories,
   .footer-inner {
@@ -961,7 +1061,65 @@ footer {
     min-height: 520px;
   }
 
+  .hoi-hero h1 {
+    font-size: clamp(52px, 12vw, 78px);
+  }
+
   .hoi-story-panel {
     min-height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-inner {
+    padding: 18px 20px;
+  }
+
+  .header-brand {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-brand span {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .primary-links ul {
+    font-size: 14px;
+  }
+
+  .hoi-hero {
+    padding: 60px 6%;
+  }
+
+  .hoi-pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hoi-pathway-card {
+    border-left: none;
+    border-top: 1px solid var(--line-gray);
+  }
+
+  .hoi-section-intro h2 {
+    font-size: 38px;
+  }
+
+  .hoi-story-overlay {
+    padding: 36px;
+  }
+
+  .hoi-cta {
+    padding: 30px 28px;
+  }
+
+  .hoi-cta-text h2,
+  .hoi-cta h2 {
+    font-size: 38px;
+  }
+
+  .hoi-cta-arrow {
+    width: 170px;
   }
 }
