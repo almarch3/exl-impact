@@ -786,7 +786,7 @@ button {
   .hoi-story-panel {
     min-height: 420px;
   }
-  
+
   .hoi-opportunity-icon {
   height: 48px;
   display: flex;
@@ -794,4 +794,9 @@ button {
   align-items: center;
   margin-bottom: 18px;
 }
+
+.home-icon a:hover svg path {
+  stroke: var(--asu-maroon);
+}
+
 }
