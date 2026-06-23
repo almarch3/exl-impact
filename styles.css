@@ -784,6 +784,32 @@ footer {
   font-weight: 700;
 }
 
+/* Header height fix */
+
+.nav-inner {
+  padding: 18px 20px;
+}
+
+.asu-header-logo {
+  height: 42px;
+}
+
+.header-brand span {
+  font-size: 30px;
+}
+
+
+/* Footer logo size fix */
+
+.footer-exl-logo {
+  height: 72px;
+}
+
+.footer-logo-column p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
 /* =============================
    9. Responsive
    ============================= */
