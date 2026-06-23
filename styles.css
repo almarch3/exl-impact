@@ -568,11 +568,6 @@ button {
     clip-path: polygon(0 0, 78% 0, 100% 50%, 78% 100%, 0 100%);
 }
 
-.hoi-pathway-intro .hoi-eyebrow,
-.hoi-pathway-intro h2 {
-    color: white;
-}
-
 .hoi-pathway-intro h2 {
     font-size: 42px;
     line-height: 1;
