@@ -420,7 +420,8 @@ nav.primary-links a:hover {
 /* Footer */
 
 footer {
-  background-color: var(--asu-gold);
+  background-color: var(--asu-black);
+  color: var(--asu-white);
   margin: auto;
   padding: 36px 30px;
 }
@@ -436,13 +437,17 @@ footer {
   letter-spacing: -0.019em;
 }
 
+.footer-inner a {
+  color: var(--asu-white);
+}
+
 .footer-inner a:hover {
+  color: var(--asu-gold);
   text-decoration: underline;
 }
 
-.footer-column {
-  justify-self: center;
-  flex-direction: column;
+.footer-column p {
+  color: var(--asu-white);
 }
 
 /* Hall of Impact Page */
