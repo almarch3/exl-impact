@@ -796,10 +796,18 @@ button {
   margin-bottom: 18px;
 }
 
-.story-quote-box p {
-  font-size: 14px;
-  line-height: 1.25;
-  text-transform: none;
+.story-quote-box {
+  background: var(--asu-gold);
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    92% 100%,
+    0 100%
+  );
+
+  position: relative;
+  z-index: 3;
 }
 
 .story-quote-box strong {
@@ -809,16 +817,15 @@ button {
 /* Student story image alignment */
 
 .story-main-image {
-  margin-left: -54px;
-  z-index: 1;
-  height: 100%;
+  position: relative;
+  margin-left: -30px;
+  z-index: 2;
 }
 
 .story-main-image img {
-  width: calc(100% + 54px);
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
 .story-cards-area {
