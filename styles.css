@@ -279,6 +279,7 @@ button {
    ========================================================= */
 
 .home-hero {
+  position: relative;   /* add this */
   min-height: 620px;
   padding: 80px 6%;
   display: flex;
