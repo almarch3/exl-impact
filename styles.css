@@ -277,9 +277,6 @@ button {
 /* =========================================================
    6. Homepage Sections
    ========================================================= */
-/* =========================================================
-   6B. Home Hero / What is ExL / Featured Events
-   ========================================================= */
 
 .home-hero { max-width: var(--page-max); margin: 0 auto; }
 .home-hero-media { position: relative; }
@@ -296,7 +293,10 @@ button {
   color: var(--asu-black); margin: 0;
 }
 
-.what-is-exl-wrap { background: var(--asu-maroon); padding: 36px 0; }
+.what-is-exl-wrap {
+  background: var(--asu-maroon);
+  padding: 64px 0 80px;   /* was: padding: 36px 0; */
+}
 .what-is-exl {
   max-width: var(--page-max); margin: 0 auto; background: var(--asu-black);
   border-radius: 50% / 70px; padding: 56px 70px;
