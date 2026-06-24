@@ -278,11 +278,17 @@ button {
    6. Homepage Sections
    ========================================================= */
 
-.home-hero { max-width: var(--page-max); margin: 0 auto; }
-.home-hero-media { position: relative; }
-.home-hero-media img {
-  width: 100%; height: 460px; object-fit: cover; object-position: center 35%;
+.home-hero {
+  min-height: 620px;
+  padding: 80px 6%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.2)),
+    url("images/home_hero.png") center / cover no-repeat;
+  color: var(--asu-white);
 }
+
 .home-hero-caption {
   position: absolute; left: 0; bottom: 0; max-width: 720px;
   background: rgba(255,255,255,0.8); padding: 24px 30px;
@@ -295,12 +301,18 @@ button {
 
 .what-is-exl-wrap {
   background: var(--asu-maroon);
-  padding: 64px 0 80px;   /* was: padding: 36px 0; */
+  padding: 64px 0 80px;
 }
 .what-is-exl {
-  max-width: var(--page-max); margin: 0 auto; background: var(--asu-black);
-  border-radius: 50% / 70px; padding: 56px 70px;
-  display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: center;
+  max-width: 760px;    
+  margin: 0 auto;
+  background: var(--asu-black);
+  border-radius: 50% / 70px;
+  padding: 56px 100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  align-items: center;
 }
 .what-is-exl h2 {
   color: var(--asu-white); font-family: var(--font-ui); font-weight: 700;
@@ -486,8 +498,6 @@ button {
 /* =========================================================
    7. Hall of Impact Page
    ========================================================= */
-
-/* 7A. Hall Hero */
 
 .hoi-hero {
   min-height: 620px;
