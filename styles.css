@@ -279,15 +279,12 @@ button {
    ========================================================= */
 
 .home-hero {
-  position: relative;  
+.home-hero {
   min-height: 620px;
   padding: 80px 6%;
   display: flex;
   align-items: center;
-  background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.2)),
-    url("images/home_hero.png") center / cover no-repeat;
-  color: var(--asu-white);
+  background: url("images/home_hero.png") center / cover no-repeat;
 }
 
 .home-hero-caption {
